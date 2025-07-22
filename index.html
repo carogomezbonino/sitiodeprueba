@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escenarios para aprender con IA - Último encuentro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h2>Cargando experiencia educativa...</h2>
+            <p>Preparando el último encuentro</p>
+        </div>
+    </div>
+
+    <!-- Menú pegajoso mejorado -->
+    <nav class="sticky-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Escenarios para aprender con IA</span>
+            </div>
+            
+            <div class="nav-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressBar"></div>
+                </div>
+                <span class="progress-text" id="progressText">0% completado</span>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link active" data-section="inicio">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="#apertura" class="nav-link" data-section="apertura">
+                    <i class="fas fa-route"></i>
+                    <span>Apertura</span>
+                </a>
+                <a href="#momento1" class="nav-link" data-section="momento1">
+                    <i class="fas fa-brain"></i>
+                    <span>Momento 1</span>
+                </a>
+                <a href="#momento2" class="nav-link" data-section="momento2">
+                    <i class="fas fa-dice"></i>
+                    <span>Momento 2</span>
+                </a>
+                <a href="#momento3" class="nav-link" data-section="momento3">
+                    <i class="fas fa-comments"></i>
+                    <span>Momento 3</span>
+                </a>
+                <a href="#momento4" class="nav-link" data-section="momento4">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Momento 4</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Escenarios para <span class="highlight">aprender con IA</span></h1>
+                <h2>Último encuentro</h2>
+                <p>Una experiencia interactiva que nos invita a reflexionar sobre el futuro de la educación en la era de la inteligencia artificial</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('apertura')">
+                        <i class="fas fa-play"></i>
+                        Comenzar experiencia
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('momento4')">
+                        <i class="fas fa-lightbulb"></i>
+                        Ver reflexión final
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-cards">
+                <div class="floating-card card-1">
+                    <i class="fas fa-robot"></i>
+                    <span>IA Generativa</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-users"></i>
+                    <span>Colaboración</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Innovación</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-book-open"></i>
+                    <span>Aprendizaje</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Apertura - Diseño horizontal mejorado -->
+    <section id="apertura" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-route"></i>
+                </div>
+                <div class="section-title">
+                    <h2>Apertura: Recuperar el trayecto</h2>
+                    <p class="section-subtitle">"¿Qué caminos recorrimos juntos?"</p>
+                </div>
+                <div class="section-progress">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="apertura-check" onchange="updateProgress()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <p class="section-description">
+                Breve repaso de los tres sincrónicos anteriores para contextualizar nuestro recorrido de aprendizaje y establecer las bases para este último encuentro.
+            </p>
+
+            <!-- Timeline horizontal mejorado -->
+            <div class="timeline-horizontal">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h4>Primer encuentro</h4>
+                        <p>Introducción a los escenarios de IA</p>
+                        <a href="#" class="timeline-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visitar sitio
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="timeline-connector"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h4>Segundo encuentro</h4>
+                        <p>Exploración de herramientas</p>
+                        <a href="#" class="timeline-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visitar sitio
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="timeline-connector"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h4>Tercer encuentro</h4>
+                        <p>Diseño de clase virtual</p>
+                        <a href="#" class="timeline-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Visitar sitio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="journey-reflection">
+                <h4><i class="fas fa-map-marked-alt"></i> Nuestro recorrido</h4>
+                <p>Hemos transitado un camino de descubrimiento y reflexión sobre las posibilidades educativas de la IA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momento 1 - TPACK corregido -->
+    <section id="momento1" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="section-title">
+                    <h2>Momento 1: Modelo de aproximación</h2>
+                    <p class="section-subtitle">"Reflexión sobre el modelo de uso de herramientas tecnológicas con IA"</p>
+                </div>
+                <div class="section-progress">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="momento1-check" onchange="updateProgress()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <p class="section-description">
+                Reflexión sobre el modelo de uso de herramientas tecnológicas con IA. Vinculación con el modelo TPACK (Tecnología, Pedagogía y Contenido): ¿Cómo se combinan estos elementos al incorporar IA?
+            </p>
+
+            <!-- Modelo TPACK corregido -->
+            <div class="tpack-container">
+                <h3>Modelo TPACK + IA</h3>
+                <div class="tpack-diagram">
+                    <svg viewBox="0 0 400 300" class="tpack-svg">
+                        <!-- Círculo Tecnológico (rosa/magenta) -->
+                        <circle cx="200" cy="100" r="80" fill="#e91e63" fill-opacity="0.7" stroke="#e91e63" stroke-width="2"/>
+                        <text x="200" y="50" text-anchor="middle" fill="white" font-weight="bold" font-size="14">Tecnológico</text>
+                        <text x="200" y="65" text-anchor="middle" fill="white" font-size="10">(TK)</text>
+                        
+                        <!-- Círculo Pedagógico (amarillo) -->
+                        <circle cx="150" cy="180" r="80" fill="#ffc107" fill-opacity="0.7" stroke="#ffc107" stroke-width="2"/>
+                        <text x="150" y="225" text-anchor="middle" fill="#333" font-weight="bold" font-size="14">Pedagógico</text>
+                        <text x="150" y="240" text-anchor="middle" fill="#333" font-size="10">(PK)</text>
+                        
+                        <!-- Círculo Contenido (azul) -->
+                        <circle cx="250" cy="180" r="80" fill="#2196f3" fill-opacity="0.7" stroke="#2196f3" stroke-width="2"/>
+                        <text x="250" y="225" text-anchor="middle" fill="white" font-weight="bold" font-size="14">Contenido</text>
+                        <text x="250" y="240" text-anchor="middle" fill="white" font-size="10">(CK)</text>
+                        
+                        <!-- Intersecciones -->
+                        <text x="175" y="140" text-anchor="middle" fill="#333" font-weight="bold" font-size="12">TPK</text>
+                        <text x="225" y="140" text-anchor="middle" fill="#333" font-weight="bold" font-size="12">TCK</text>
+                        <text x="200" y="200" text-anchor="middle" fill="#333" font-weight="bold" font-size="12">PCK</text>
+                        
+                        <!-- Centro TPACK -->
+                        <circle cx="200" cy="160" r="25" fill="#ff5722" stroke="#ff5722" stroke-width="2"/>
+                        <text x="200" y="165" text-anchor="middle" fill="white" font-weight="bold" font-size="12">TPACK</text>
+                        
+                        <!-- IA en el centro -->
+                        <circle cx="200" cy="160" r="15" fill="#d32f2f" stroke="#d32f2f" stroke-width="1"/>
+                        <text x="200" y="165" text-anchor="middle" fill="white" font-weight="bold" font-size="10">IA</text>
+                    </svg>
+                </div>
+                
+                <div class="tpack-info">
+                    <div class="tpack-card">
+                        <h4><i class="fas fa-eye"></i> Enfoque crítico</h4>
+                        <p>Uso reflexivo, contextualizado y situado de las tecnologías. La herramienta no es neutra, ni el uso meramente funcional.</p>
+                    </div>
+                    
+                    <div class="tpack-card">
+                        <h4><i class="fas fa-file-alt"></i> Ficha técnica</h4>
+                        <p><strong>Explorar – Dialogar – Documentar y reflexionar</strong> con inspiración educativa</p>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Ver recurso
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momento 2 - Tragamonedas mejorado -->
+    <section id="momento2" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-dice"></i>
+                </div>
+                <div class="section-title">
+                    <h2>Momento 2: Puesta en común lúdica</h2>
+                    <p class="section-subtitle">"El aula como escenario de juego y escucha activa"</p>
+                </div>
+                <div class="section-progress">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="momento2-check" onchange="updateProgress()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tragamonedas estilo casino -->
+            <div class="casino-container">
+                <h3><i class="fas fa-dice"></i> Tragamonedas de Grupos (1-18)</h3>
+                
+                <div class="slot-machine">
+                    <div class="slot-machine-header">
+                        <div class="slot-lights">
+                            <div class="light"></div>
+                            <div class="light"></div>
+                            <div class="light"></div>
+                            <div class="light"></div>
+                            <div class="light"></div>
+                        </div>
+                        <h4>CASINO EDUCATIVO</h4>
+                    </div>
+                    
+                    <div class="slot-display">
+                        <div class="slot-reel" id="slot1">
+                            <div class="slot-number">?</div>
+                        </div>
+                        
+                        <div class="slot-vs">VS</div>
+                        
+                        <div class="slot-reel" id="slot2">
+                            <div class="slot-number">?</div>
+                        </div>
+                    </div>
+                    
+                    <div class="slot-controls">
+                        <button class="slot-btn" id="spin1" onclick="spinSlot(1)">
+                            <i class="fas fa-play"></i>
+                            Girar Sector 1
+                        </button>
+                        <button class="slot-btn" id="spin2" onclick="spinSlot(2)">
+                            <i class="fas fa-play"></i>
+                            Girar Sector 2
+                        </button>
+                    </div>
+                    
+                    <div class="slot-results">
+                        <h4><i class="fas fa-users"></i> Grupos seleccionados</h4>
+                        <div class="selected-groups" id="selectedGroups">
+                            <div class="empty-state">
+                                <i class="fas fa-dice"></i>
+                                <p>Gira los sectores para seleccionar grupos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="replacement-controls" id="replacementControls" style="display: none;">
+                            <h5>¿Necesitas reemplazar algún grupo?</h5>
+                            <button class="btn btn-warning" onclick="replaceGroup(1)">
+                                <i class="fas fa-redo"></i>
+                                Reemplazar Grupo 1
+                            </button>
+                            <button class="btn btn-warning" onclick="replaceGroup(2)">
+                                <i class="fas fa-redo"></i>
+                                Reemplazar Grupo 2
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cronómetro compacto y colorido -->
+            <div class="timer-analysis-container">
+                <div class="timer-section">
+                    <h3><i class="fas fa-clock"></i> Cronómetro</h3>
+                    <div class="timer-display">
+                        <div class="timer-circle">
+                            <svg class="timer-svg" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#e0e0e0" stroke-width="8"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#4caf50" stroke-width="8" 
+                                        stroke-dasharray="283" stroke-dashoffset="283" id="timerProgress"/>
+                            </svg>
+                            <div class="timer-text">
+                                <span id="timerDisplay">05:00</span>
+                                <small>minutos</small>
+                            </div>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="timer-btn start" id="startTimer" onclick="startTimer()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="timer-btn pause" id="pauseTimer" onclick="pauseTimer()" style="display: none;">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="timer-btn reset" onclick="resetTimer()">
+                                <i class="fas fa-redo"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Análisis compacto -->
+                <div class="analysis-section">
+                    <h3><i class="fas fa-chart-line"></i> Análisis desde los tres escenarios IA</h3>
+                    <div class="scenario-cards">
+                        <div class="scenario-card scenario-1">
+                            <div class="scenario-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h4>Herramientas de asistencia</h4>
+                            <p>Sistemas que apoyan la ejecución de tareas</p>
+                        </div>
+                        
+                        <div class="scenario-card scenario-2">
+                            <div class="scenario-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>Reflexión y análisis</h4>
+                            <p>Sistemas que apoyan el proceso de reflexión</p>
+                        </div>
+                        
+                        <div class="scenario-card scenario-3">
+                            <div class="scenario-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Agentes inteligentes</h4>
+                            <p>Creación y personalización de agentes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momento 3 - Diálogos -->
+    <section id="momento3" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <div class="section-title">
+                    <h2>Momento 3: Diálogos del trayecto</h2>
+                    <p class="section-subtitle">"Recuperación colectiva de los 5 diálogos clave"</p>
+                </div>
+                <div class="section-progress">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="momento3-check" onchange="updateProgress()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <p class="section-description">
+                Recuperación colectiva de los 5 diálogos clave que han estructurado nuestro trayecto de aprendizaje con IA.
+            </p>
+
+            <div class="dialogues-grid">
+                <div class="dialogue-card">
+                    <div class="dialogue-image">
+                        <img src="images/insignia1-continuum.png" alt="IA como continuum">
+                    </div>
+                    <h4>IA como continuum</h4>
+                    <p>La inteligencia artificial como un espectro continuo de capacidades y aplicaciones</p>
+                </div>
+
+                <div class="dialogue-card">
+                    <div class="dialogue-image">
+                        <img src="images/insignia-2dialogogenerativoconia.png" alt="Diálogos generativos con la IA">
+                    </div>
+                    <h4>Diálogos generativos con la IA</h4>
+                    <p>Interacciones creativas y productivas entre humanos y sistemas de IA</p>
+                </div>
+
+                <div class="dialogue-card">
+                    <div class="dialogue-image">
+                        <img src="images/insignia3-dialogogenerativoconpares.png" alt="Diálogos entre docentes">
+                    </div>
+                    <h4>Diálogos entre docentes</h4>
+                    <p>Intercambio de experiencias y reflexiones pedagógicas sobre el uso de IA</p>
+                </div>
+
+                <div class="dialogue-card">
+                    <div class="dialogue-image">
+                        <img src="images/insignia4-dialogogenerativoconuno.png" alt="Diálogo con nosotros mismos">
+                    </div>
+                    <h4>Diálogo con nosotros mismos</h4>
+                    <p>Reflexión personal sobre nuestras prácticas y creencias educativas</p>
+                </div>
+
+                <div class="dialogue-card">
+                    <div class="dialogue-image">
+                        <img src="images/insignia5-dialogoenredes.png" alt="Diálogos en redes">
+                    </div>
+                    <h4>Diálogos en redes</h4>
+                    <p>Participación en comunidades de práctica y espacios de intercambio virtual</p>
+                </div>
+            </div>
+
+            <div class="bitacora-section">
+                <div class="bitacora-card">
+                    <div class="bitacora-image">
+                        <img src="images/bitacorasinfondo.png" alt="Bitácora de aprendizaje">
+                    </div>
+                    <div class="bitacora-content">
+                        <h4><i class="fas fa-book"></i> Bitácora de aprendizaje</h4>
+                        <p>Registro reflexivo de nuestro proceso de descubrimiento y construcción de conocimiento con IA.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Momento 4 - Reflexión pedagógica -->
+    <section id="momento4" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="section-title">
+                    <h2>Momento 4: Reflexión pedagógica</h2>
+                    <p class="section-subtitle">"La pregunta como motor del aprendizaje"</p>
+                </div>
+                <div class="section-progress">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="momento4-check" onchange="updateProgress()">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+
+            <p class="section-description">
+                Reflexión final sobre la pregunta como motor del aprendizaje (mayéutica) y la problematización como enfoque metodológico. Mirada situada, ética y crítica del vínculo con la tecnología.
+            </p>
+
+            <div class="referentes-section">
+                <h3>Referentes convocados</h3>
+                <div class="referentes-grid">
+                    <div class="referente-card">
+                        <div class="referente-image">
+                            <img src="images/socrates.jpg" alt="Sócrates">
+                        </div>
+                        <h4>Sócrates</h4>
+                        <blockquote>"Solo sé que no sé nada"</blockquote>
+                        <p>La importancia de la pregunta y la humildad intelectual</p>
+                    </div>
+
+                    <div class="referente-card">
+                        <div class="referente-image">
+                            <img src="images/paulo-freire.jpg" alt="Paulo Freire">
+                        </div>
+                        <h4>Paulo Freire</h4>
+                        <blockquote>"Enseñar no es transferir conocimiento, sino crear las posibilidades para su producción o construcción"</blockquote>
+                        <p>La educación como práctica de la libertad</p>
+                    </div>
+
+                    <div class="referente-card">
+                        <div class="referente-image">
+                            <img src="images/carina-lion.png" alt="Carina Lion">
+                        </div>
+                        <h4>Carina Lion</h4>
+                        <blockquote>"IA como interfaz que tensiona lo humano, lo educativo y lo técnico"</blockquote>
+                        <p>Perspectiva crítica sobre la tecnología educativa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-image">
+                    <img src="images/escuela-atenas.jpg" alt="La escuela de Atenas - Rafael Sanzio">
+                    <div class="footer-overlay">
+                        <h3>"La escuela de Atenas"</h3>
+                        <p>Rafael Sanzio - Un encuentro de mentes brillantes en el diálogo eterno del conocimiento</p>
+                    </div>
+                </div>
+                
+                <div class="footer-text">
+                    <p>Gracias por acompañarnos en este recorrido de aprendizaje y reflexión sobre la inteligencia artificial en educación.</p>
+                    <p><strong>Que el diálogo y la pregunta sigan siendo nuestros compañeros de viaje.</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notificaciones -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
